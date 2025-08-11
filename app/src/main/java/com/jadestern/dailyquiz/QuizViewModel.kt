@@ -31,7 +31,7 @@ class QuizViewModel @Inject constructor(
 
     private var timerJob: Job? = null
     private var feedbackJob: Job? = null
-    private var timerTime = 30
+    private var timerTime = 300
     private val _remainingTime = MutableStateFlow(timerTime)
     val remainingTime = _remainingTime.asStateFlow()
     fun startQuiz() {
